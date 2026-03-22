@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <title>Magic Navigation | Day 14 Part 02 | codingwithvishesh</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="bg-gradient"></div>
+        <div class="particles"></div>
+
+        <div class="navigation">
+            <ul>
+                <li class="list active" data-tab="home">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </span>
+                        <span class="text">Home</span>
+                    </a>
+                </li>
+                <li class="list" data-tab="profile">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="person-outline"></ion-icon>
+                        </span>
+                        <span class="text">Profile</span>
+                    </a>
+                </li>
+                <li class="list" data-tab="message">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="chatbubble-outline"></ion-icon>
+                        </span>
+                        <span class="text">Message</span>
+                    </a>
+                </li>
+                <li class="list" data-tab="photos">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="camera-outline"></ion-icon>
+                        </span>
+                        <span class="text">Photos</span>
+                    </a>
+                </li>
+                <li class="list" data-tab="settings">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="settings-outline"></ion-icon>
+                        </span>
+                        <span class="text">Settings</span>
+                    </a>
+                </li>
+                <div class="indicator"></div>
+            </ul>
+        </div>
+
+        <!-- Content Panel that changes with active tab -->
+        <div class="content-panel">
+            <div class="tab-content active" id="home-content">
+                <h2>✨ Welcome Home</h2>
+                <p>Navigate through the universe of creativity. Every click brings a new experience.</p>
+                <div class="feature-card">
+                    <ion-icon name="sparkles-outline"></ion-icon>
+                    <span>Magic Navigation</span>
+                </div>
+            </div>
+            <div class="tab-content" id="profile-content">
+                <h2>👤 Your Profile</h2>
+                <p>codingwithvishesh • Creator • Innovator</p>
+                <div class="stats">
+                    <div class="stat">100 Days</div>
+                    <div class="stat">14 Projects</div>
+                    <div class="stat">✨ Never Give Up</div>
+                </div>
+            </div>
+            <div class="tab-content" id="message-content">
+                <h2>💬 Messages</h2>
+                <p>You have <span class="highlight">3</span> new messages waiting!</p>
+                <div class="message-preview">
+                    <div class="msg">🌟 Your project is amazing!</div>
+                    <div class="msg">🎉 Day 14 is killing it!</div>
+                </div>
+            </div>
+            <div class="tab-content" id="photos-content">
+                <h2>📸 Latest Moments</h2>
+                <div class="photo-grid">
+                    <div class="photo-placeholder">🎨</div>
+                    <div class="photo-placeholder">⚡</div>
+                    <div class="photo-placeholder">🌀</div>
+                </div>
+            </div>
+            <div class="tab-content" id="settings-content">
+                <h2>⚙️ Settings</h2>
+                <p>Theme: Dynamic • Animations: Smooth • Magic: ON</p>
+                <div class="toggle-demo">
+                    <span>✨ Magic Mode</span>
+                    <div class="toggle active"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        Made with <span class="heart">❤️</span> by codingwithvishesh
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
